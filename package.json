@@ -4,11 +4,12 @@
   "description": "Backend for Beard Friends",
   "main": "/dist/app.js",
   "scripts": {
-    "start": "tsc && node dist/app.js",
-    "serve": "node dist/app.js",
+    "start": "node dist/app.js",
+    "build": "tsc",
     "dev": "nodemon --watch src --exec ts-node src/app.ts",
     "lint": "eslint \"src/**/*.{js,ts}\"",
     "seed": "tsc && node dist/seedUsers.js"
+
   },
   "author": "AlrightTech",
   "license": "ISC",
